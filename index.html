@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM practice first project</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header__logo">
+                <a class="header__logo-link" href="">
+                    <img class="header__logo-img" src="assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header__menu">
+                <ul class="header__menu-box">
+                    <li class="header__menu-item"><a class="header__menu-link" href="">home</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="">about</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="">services</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="">portfolio</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="">contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <img class="banner__img" src="assets/images/bannar.jpg" alt="">
+        </div>
+        <section class="service">
+            <h4 class="service__title">exclusive service</h4>
+            <div class="service__main">
+                <div class="service__single">
+                    <h4 class="service__heading">service title</h4>
+                    <img class="service__img" src="assets/images/service1.jpg" alt="">
+                    <p class="service__dsc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ad pariatur magni sequi ipsam exercitationem explicabo inventore adipisci facilis unde?</p>
+                    <a class="service__link btn btn--primary" href="">read more</a>
+                </div>
+                <div class="service__single">
+                    <h4 class="service__heading">service title</h4>
+                    <img class="service__img" src="assets/images/service2.jpg" alt="">
+                    <p class="service__dsc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ad pariatur magni sequi ipsam exercitationem explicabo inventore adipisci facilis unde?</p>
+                    <a class="service__link btn btn--danger" href="">read more</a>
+                </div>
+                <div class="service__single">
+                    <h4 class="service__heading">service title</h4>
+                    <img class="service__img" src="assets/images/service3.jpg" alt="">
+                    <p class="service__dsc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ad pariatur magni sequi ipsam exercitationem explicabo inventore adipisci facilis unde?</p>
+                    <a class="service__link btn btn--success" href="">read more</a>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__content">
+                <h4 class="about__title">about us</h4>
+                <p class="about__dsc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore minima consequuntur, sapiente ipsam placeat dolor? Fugiat distinctio voluptate molestiae maxime.</p>
+                <p class="about__dsc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore minima consequuntur, sapiente ipsam placeat dolor? Fugiat distinctio voluptate molestiae maxime.</p>
+                <a class="about__link btn btn--danger" href="">read more</a>
+            </div>
+            <div class="about__menu">
+                <h4 class="about__title">sidebar menu</h4>
+                <ul class="about__menu-box">
+                    <li class="about__menu-item"><a class="about__menu-link" href="">home</a></li>
+                    <li class="about__menu-item"><a class="about__menu-link" href="">about</a></li>
+                    <li class="about__menu-item"><a class="about__menu-link" href="">services</a></li>
+                    <li class="about__menu-item"><a class="about__menu-link" href="">portfolio</a></li>
+                    <li class="about__menu-item"><a class="about__menu-link" href="">contact</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="contact__form">
+                <h4 class="about__title">get in touch</h4>
+                <form action="#">
+                    <input class="contact__input" type="text" placeholder="Name">
+                    <input class="contact__input" type="email" placeholder="Email">
+                    <input class="contact__input" type="text" placeholder="Subject">
+                    <textarea class="contact__message" placeholder="Message"></textarea>
+                    <input class="contact__submit" type="submit" value="send">
+                </form>
+            </div>
+            <div class="contact__address">
+                <h4 class="about__title">our address</h4>
+                <ul class="contact__address-box">
+                    <li class="contact_list">address:enayetput,gazipur</li>
+                    <li class="contact_list">email:abc@gmail.com</li>
+                    <li class="contact_list">phone:123456789</li>
+                    <li class="contact_list">web:webabc.com</li>
+                </ul>
+            </div>
+        </section>
+        <section class="map">
+            <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1083.6947166956222!2d90.30928098702586!3d23.992250571025554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755dd708ee6c6b1%3A0xb2a69f6042b6f6fa!2zRW5heWV0cHVyIEdvdmVybm1lbnQgUHJpbWFyeSBTY2hvb2wg4KaP4Kao4Ka-4Kav4Ka84KeH4Kak4Kaq4KeB4KawIOCmuOCmsOCmleCmvuCmsOCmvyDgpqrgp43gprDgpr7gpqXgpq7gpr_gppUg4Kas4Ka_4Kam4KeN4Kav4Ka-4Kay4Kav4Ka8!5e0!3m2!1sen!2sbd!4v1659242506779!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <footer class="footer">
+            <p class="footer__text">
+                &copy;2022 all right reserved
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

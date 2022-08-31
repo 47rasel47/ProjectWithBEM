@@ -1,0 +1,279 @@
+/*** basic css ***/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    width: 1000px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+.btn{
+  background: tomato;
+    padding: 10px 25px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-top: 15px;
+    display: inline-block;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    font-style: italic;
+    &:hover{
+      background-color: hotpink;
+    }
+    &--primary{
+      background-color: brown;
+    }
+    &--success{
+      background-color:darkgreen;
+    }
+    &--danger{
+      background-color: coral;
+    }
+}
+/*** header css ***/
+.header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    justify-content: space-between;
+    background-color: #ddd;
+    padding: 20px;
+    &__logo {
+        flex-basis: 20%;
+      }
+      &__menu {
+        flex-basis: 75%;
+      }
+      &__menu-box {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &__menu-item {
+        margin-left: 20px;
+      }
+      &__menu-link {
+        text-transform: capitalize;
+        font-size: 20px;
+        transition: 0.3s;
+        &:hover {
+            color: tomato;
+          }
+      }
+}
+/*** banner css ***/
+
+.banner{
+  margin-bottom:30px;
+  &__img {
+    border: 3px solid #ddd;
+    padding: 3px;
+  }
+}
+/*** service css ***/
+
+.service{
+  margin-bottom: 50px;
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  &__single {
+    flex-basis: 32%;
+    background: teal;
+    color: #fff;
+    padding: 20px;
+  }
+  &__heading {
+    text-transform: capitalize;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__dsc {
+    line-height: 20px;
+    margin: 10px 0;
+  }
+  &__link {
+    margin-top: 15px;
+}
+}
+/*** about css ***/
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__content {
+    flex-basis: 60%;
+  }
+  &__menu {
+    flex-basis: 25%;
+  }
+  &__title {
+    text-transform: capitalize;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  &__dsc {
+    line-height: 20px;
+  }
+  &__menu-item {
+    background-image: url(/assets/images/arrow.png);
+    background-repeat: no-repeat;
+    padding-left: 26px;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    background-position: 0 0;
+    padding-bottom: 5px;
+    &:last-child{
+      border-bottom: 0px;
+    }
+    
+  }
+  &__menu-link{
+    transition: .3s;
+    &:hover{
+      color: tomato;
+    }
+  }
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__form {
+    flex-basis: 65%;
+  }
+  &__address {
+    flex-basis: 24%;
+  }
+  &__input {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+  &__message {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 100px;
+    padding: 10px 10px;
+  }
+  &__submit {
+    width: 100%;
+    padding: 9px;
+    text-transform: capitalize;
+    font-size: 18px;
+    background: tomato;
+    color: #fff;
+    border: 1px solid #ddd;
+  }
+  &_list {
+    text-transform: capitalize;
+    font-size: 21px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+}
+
+.map {
+  margin: 30px 0;
+  &__iframe {
+    border: 3px solid #ddd !important;
+    padding: 10px;
+    width: 100%;
+    height: 300px;
+  }
+}
+.footer {
+  background: teal;
+  text-align: center;
+  padding: 20px;
+  &__text {
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 600;
+  }
+}
+ /*responsive part*/
+
+/*medium layout: 1280px*/
+@media only screen and (min-width:992px) and (max-width:1200px){
+  .main{
+    width: 970px;
+  }
+}
+/*tablet layout: 768px*/
+@media only screen and (min-width:768px) and (max-width:991px){
+  .main{
+    width: 750px;
+  }
+}
+/*Mobile layout: 320px*/
+@media only screen and (min-width:320px) and (max-width:767px){
+  .main{
+    width: 300px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header__menu-box {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .header__menu-item {
+    margin-bottom: 10px;
+  }
+  .service__single {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .about__content {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .about__menu {
+    flex-basis: 100%;
+  }
+  .contact__form {
+    flex-basis: 100%;
+  }
+  .contact__address {
+    flex-basis: 100%;
+  }
+}
+
+ 
